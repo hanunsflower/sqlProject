@@ -1,7 +1,7 @@
 //Step1: Import modules
 
 const express= require("express");
-const sql= require ("sql2")
+const mysql= require ("mysql2")
 
 // step 2 : initiate express
 
@@ -13,6 +13,7 @@ let myDBconnection=mysql.createConnection({
     user: "riaCRUDpractice",
     password: "riaCRUD@1234",
     host: "localhost",
+    port: 8889,
     database: "riaCRUDdb"
 });
 
